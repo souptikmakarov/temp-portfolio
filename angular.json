@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/poi-ui-library/css/bootstrap.min.css",
+              "src/assets/poi-ui-library/css/font-awesome.min.css",
+              "src/assets/poi-ui-library/css/poi.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/poi-ui-library/js/jquery-3.3.1.slim.min.js",
+              "src/assets/poi-ui-library/js/bootstrap.bundle.min.js",
+              "src/assets/poi-ui-library/js/poi.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -52,13 +59,11 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "6kb"
                 }
               ]
             }
